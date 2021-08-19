@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import Logo from '../Logo'
-import Heading from '../Heading'
+import Logo from 'components/Logo'
+import Heading from 'components/Heading'
 import * as S from './styles'
 
 const Footer = () => (
