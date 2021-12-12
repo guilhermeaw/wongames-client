@@ -14,7 +14,7 @@ describe('<FormSignIn />', () => {
       screen.getByRole('button', { name: /sign in now/i })
     ).toBeInTheDocument()
 
-    expect(container).toMatchSnapshot()
+    expect(container.parentElement).toMatchSnapshot()
   })
 
   it('should render the forgot password link', () => {
