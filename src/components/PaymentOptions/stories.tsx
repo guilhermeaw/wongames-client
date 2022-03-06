@@ -25,5 +25,7 @@ export default {
 } as Meta
 
 export const Default: Story<PaymentOptionsProps> = (args) => (
-  <PaymentOptions {...args} />
+  <div style={{ maxWidth: 400, padding: 16 }}>
+    <PaymentOptions {...args} />
+  </div>
 )
