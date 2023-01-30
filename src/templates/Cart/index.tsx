@@ -1,12 +1,13 @@
-import CartList, { CartListProps } from 'components/CartList'
-import { Container } from 'components/Container'
-import { Divider } from 'components/Divider'
 import Empty from 'components/Empty'
-import { GameCardProps } from 'components/GameCard'
 import Heading from 'components/Heading'
-import { HighlightProps } from 'components/Highlight'
-import PaymentOptions, { PaymentOptionsProps } from 'components/PaymentOptions'
 import Showcase from 'components/Showcase'
+import { Divider } from 'components/Divider'
+import { Container } from 'components/Container'
+import { GameCardProps } from 'components/GameCard'
+import { HighlightProps } from 'components/Highlight'
+import CartList, { CartListProps } from 'components/CartList'
+import PaymentOptions, { PaymentOptionsProps } from 'components/PaymentOptions'
+
 import Base from 'templates/Base'
 
 import * as S from './styles'
@@ -33,7 +34,7 @@ const Cart = ({
           My cart
         </Heading>
 
-        {items.length ? (
+        {items?.length ? (
           <S.Content>
             <CartList items={items} total={total} />
 
